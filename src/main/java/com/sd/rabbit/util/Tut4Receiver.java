@@ -5,12 +5,12 @@ import org.springframework.util.StopWatch;
 
 public class Tut4Receiver {
 
-	@RabbitListener(queues = "#{autoDeleteQueue1.name}")
+	@RabbitListener(queues = "sd1")
     public void receive1(String in) throws InterruptedException {
         receive(in, 1);
     }
 
-    @RabbitListener(queues = "#{autoDeleteQueue2.name}")
+    @RabbitListener(queues = "sd2")
     public void receive2(String in) throws InterruptedException {
         receive(in, 2);
     }

@@ -27,13 +27,13 @@ public class Tut4Config {
 		
 		@Bean
 		public Queue autoDeleteQueue1(){
-			return new AnonymousQueue();
+			return new Queue("sd1");
 		}
 		
 		
 		@Bean
 		public Queue autoDeleteQueue2(){
-			return new AnonymousQueue();
+			return new Queue("sd2");
 		}
 		
 		@Bean
